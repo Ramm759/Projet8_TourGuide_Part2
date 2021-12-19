@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
 
-@FeignClient(name = "GpsUtilProxy", url ="${client.gps.base.url}") // décale l'application mère et l'enfant
+@FeignClient(name = "GpsUtilProxy", url ="${client.gps.base.url}") // déclare l'application mère et l'enfant
 public interface GpsUtilProxy {
     @RequestMapping("/getAttractions")
     List<Attraction> getAttractions();
